@@ -83,19 +83,17 @@
 
 ---
 
-## 🌐 Public Cloud Deployment Guide (Streamlit Community Cloud)
+## 🌐 Official Live Cloud Deployment (Streamlit Community Cloud)
 
-1. **Push to GitHub**:
-   - Create a GitHub repository (e.g., `streamlit-hr-analytics`).
-   - Push `app.py`, `hr_workforce_data.csv`, and `requirements.txt`.
-   - Push to the `main` branch.
+- **Public Web Application:** 🚀 [lab-6-python-hr-analytics.streamlit.app](https://lab-6-python-hr-analytics.streamlit.app/)
+- **GitHub Source Repository:** 📁 [github.com/DevanshGupta099/HR-Analytics](https://github.com/DevanshGupta099/HR-Analytics)
+- **Deployment Status:** ✅ Live & Synchronized with `origin/main`
 
-2. **Deploy on Streamlit Community Cloud**:
-   - Go to [share.streamlit.io](https://share.streamlit.io/) and log in with GitHub.
-   - Click **"New app"**.
-   - Select your repository, branch (`main`), and set Main file path to `app.py`.
-   - Click **"Deploy!"**.
-   - Streamlit provides your public HTTPS link (e.g., `https://<your-username>-hr-analytics.streamlit.app`).
+### Deployment Details
+- **Platform:** Streamlit Community Cloud (`share.streamlit.io`)
+- **Main Entrypoint:** `app.py`
+- **Environment Packages:** `requirements.txt` (`streamlit`, `pandas`, `numpy`, `plotly`)
+- **Auto-Sync:** Any push to `main` automatically triggers a zero-downtime rolling reload on Streamlit Cloud.
 
 ---
 
