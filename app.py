@@ -25,7 +25,7 @@ import plotly.express as px
 # =============================================================================
 st.set_page_config(
     page_title="HR Workforce Analytics Dashboard",
-    page_icon="💼",
+    page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -156,18 +156,18 @@ df_base = load_default_hr_data()
 # 3. SIDEBAR: FILTERS, VALIDATION & ROBUST CONTROLS
 # =============================================================================
 with st.sidebar:
-    st.title("⚙️ Workforce Filters")
+    st.title("Workforce Filters")
     st.caption("Customize parameters to analyze specific workforce segments:")
 
     # Reset Button: Cleanly wipes active session filter overrides
-    if st.button("🔄 Reset All Filters", use_container_width=True, type="secondary"):
+    if st.button("Reset All Filters", use_container_width=True, type="secondary"):
         st.session_state.clear()
         st.rerun()
 
     st.divider()
 
     # --- ADVANCED / ROBUST FEATURE: Custom CSV Upload with Validation ---
-    with st.expander("📂 Upload Custom Dataset (Optional)", expanded=False):
+    with st.expander("Upload Custom Dataset (Optional)", expanded=False):
         st.caption("Upload a custom workforce CSV to evaluate app resilience:")
         uploaded_file = st.file_uploader("Upload CSV", type=["csv"], help="Must contain Department and Monthly_Salary columns.")
         
@@ -177,12 +177,12 @@ with st.sidebar:
             user_df = pd.read_csv(uploaded_file)
             missing = [c for c in ["Department", "Monthly_Salary"] if c not in user_df.columns]
             if missing:
-                st.sidebar.error(f"❌ Uploaded CSV missing columns: {missing}. Using default dataset.")
+                st.sidebar.error(f"Uploaded CSV missing columns: {missing}. Using default dataset.")
             else:
                 df_raw = clean_and_validate_dataset(user_df)
-                st.sidebar.success(f"✅ Loaded {len(df_raw)} records from uploaded file!")
+                st.sidebar.success(f"Loaded {len(df_raw)} records from uploaded file!")
         except Exception as e:
-            st.sidebar.warning(f"⚠️ Error parsing file: {e}. Falling back to default data.")
+            st.sidebar.warning(f"Error parsing file: {e}. Falling back to default data.")
 
     # --- Filter 1: Joining Date Range (Edge-Case Guarded) ---
     min_join = df_raw["Joining_Date"].min().date()
@@ -194,7 +194,7 @@ with st.sidebar:
         st.caption(f"Joining Date: {min_join}")
     else:
         selected_dates = st.date_input(
-            "📅 Joining Date Range:",
+            "Joining Date Range:",
             value=(min_join, max_join),
             min_value=min_join,
             max_value=max_join,
@@ -219,24 +219,24 @@ with st.sidebar:
     # --- Filter 2: Department Multiselect (Empty Guarded) ---
     all_depts = sorted(df_raw["Department"].dropna().unique().tolist())
     selected_depts = st.multiselect(
-        "🏢 Select Departments:",
+        "Select Departments:",
         options=all_depts,
         default=all_depts,
         help="Filter employees by organizational division."
     )
     if not selected_depts:
-        st.warning("⚠️ No department selected. Please choose at least one department.")
+        st.warning("No department selected. Please choose at least one department.")
 
     # --- Filter 3: Attrition Status Multiselect (Empty Guarded) ---
     all_attrition = sorted(df_raw["Attrition"].dropna().unique().tolist())
     selected_attrition = st.multiselect(
-        "🚪 Attrition Status:",
+        "Attrition Status:",
         options=all_attrition,
         default=all_attrition,
         help="Filter by active employees or resigned staff."
     )
     if not selected_attrition:
-        st.warning("⚠️ No attrition status selected. Please choose at least one.")
+        st.warning("No attrition status selected. Please choose at least one.")
 
     # --- Filter 4: Monthly Salary Range Slider ---
     min_sal = float(df_raw["Monthly_Salary"].min())
@@ -245,7 +245,7 @@ with st.sidebar:
         max_sal = min_sal + 5000.0
 
     salary_range = st.slider(
-        "💰 Monthly Salary Range (₹):",
+        "Monthly Salary Range (₹):",
         min_value=float(round(min_sal, -3)),
         max_value=float(round(max_sal, -3)),
         value=(float(round(min_sal, -3)), float(round(max_sal, -3))),
@@ -260,7 +260,7 @@ with st.sidebar:
         min_perf, max_perf = 0.0, 100.0
 
     perf_threshold = st.slider(
-        "🎯 Minimum Performance Score (0-100):",
+        "Minimum Performance Score (0-100):",
         min_value=float(round(min_perf, 0)),
         max_value=100.0,
         value=float(round(min_perf, 0)),
@@ -270,21 +270,21 @@ with st.sidebar:
 
     # --- Filter 6: Overtime Radio Filter ---
     overtime_filter = st.radio(
-        "⏱️ Overtime Status:",
+        "Overtime Status:",
         options=["All Employees", "Only Overtime (Yes)", "No Overtime (No)"],
         horizontal=True
     )
 
     # --- Filter 7: Text Search Filter (Regex-Safe) ---
     search_query = st.text_input(
-        "🔍 Search (Name, Role, Emp ID):",
+        "Search (Name, Role, Emp ID):",
         value="",
         placeholder="e.g. Priya, Analyst, 1015...",
         help="Instant regex-safe search matching name, role, or ID."
     )
 
     st.divider()
-    st.info("💡 **Reactive Execution:** All visual analytics and KPIs automatically recompute when any filter changes.")
+    st.info("**Reactive Execution:** All visual analytics and KPIs automatically recompute when any filter changes.")
 
 
 # =============================================================================
@@ -324,7 +324,7 @@ filtered_df = df_raw[mask].copy()
 # =============================================================================
 # 5. HEADER & TOP BANNER
 # =============================================================================
-st.title("💼 HR Workforce Analytics & Talent Management Dashboard")
+st.title("HR Workforce Analytics & Talent Management Dashboard")
 st.markdown("""
 Welcome to the interactive Human Resources analytics platform. This dashboard enables HR directors 
 and managers to monitor workforce health, track departmental compensation equity, analyze employee 
@@ -338,7 +338,7 @@ st.caption(f"Showing **{len(filtered_df)}** of **{len(df_raw)}** total employee 
 # 6. EMPTY DATASET GRACEFUL HANDLING (PREVENTS CRASHES)
 # =============================================================================
 if filtered_df.empty:
-    st.error("⚠️ **No employee records match the active filter criteria!**")
+    st.error("**No employee records match the active filter criteria!**")
     st.markdown("""
     <div class="validation-alert">
         <strong>Why did this happen?</strong><br>
@@ -349,7 +349,7 @@ if filtered_df.empty:
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("🔄 Reset All Filters to Defaults", key="reset_empty_view", type="primary"):
+    if st.button("Reset All Filters to Defaults", key="reset_empty_view", type="primary"):
         st.session_state.clear()
         st.rerun()
         
@@ -359,7 +359,7 @@ if filtered_df.empty:
 # =============================================================================
 # 7. KEY PERFORMANCE INDICATORS (KPIs) - SIDE-BY-SIDE COLUMNS
 # =============================================================================
-st.subheader("📌 Executive HR Key Performance Indicators", divider="blue")
+st.subheader("Executive HR Key Performance Indicators", divider="blue")
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -414,10 +414,10 @@ st.divider()
 # 8. TABBED INTERFACE FOR APPLICATION ORGANIZATION
 # =============================================================================
 tab_overview, tab_charts, tab_groupby, tab_insights = st.tabs([
-    "📋 Employee Directory & Overview",
-    "📈 Graphical Visualizations",
-    "🔍 Departmental GroupBy Analytics",
-    "💡 Strategic Talent Insights"
+    "Employee Directory & Overview",
+    "Graphical Visualizations",
+    "Departmental GroupBy Analytics",
+    "Strategic Talent Insights"
 ])
 
 
@@ -433,7 +433,7 @@ with tab_overview:
     default_cols = ["Emp_ID", "Name", "Department", "Role", "Monthly_Salary", "Performance_Score", "Overtime", "Attrition"]
     visible_cols = [c for c in default_cols if c in all_cols]
     
-    with st.expander("👁️ Select Visible Columns in Table", expanded=False):
+    with st.expander("Select Visible Columns in Table", expanded=False):
         chosen_cols = st.multiselect("Columns to display:", options=all_cols, default=visible_cols)
         if not chosen_cols:
             chosen_cols = visible_cols
@@ -447,7 +447,7 @@ with tab_overview:
     # Safe CSV Download
     csv_bytes = filtered_df.to_csv(index=False).encode('utf-8')
     st.download_button(
-        label="📥 Download Filtered Workforce Records (CSV)",
+        label="Download Filtered Workforce Records (CSV)",
         data=csv_bytes,
         file_name="filtered_hr_workforce.csv",
         mime="text/csv"
@@ -458,7 +458,7 @@ with tab_overview:
     # Expanders for Statistical Details & Schema
     c_exp1, c_exp2 = st.columns(2)
     with c_exp1:
-        with st.expander("📋 View Descriptive Summary Statistics"):
+        with st.expander("View Descriptive Summary Statistics"):
             num_cols = ["Age", "Experience_Years", "Monthly_Salary", "Appraisal_Rating", "Attendance_Pct", "Performance_Score"]
             valid_num_cols = [c for c in num_cols if c in filtered_df.columns]
             if valid_num_cols:
@@ -467,7 +467,7 @@ with tab_overview:
                 st.info("No numerical attributes available for descriptive statistics.")
 
     with c_exp2:
-        with st.expander("ℹ️ HR Dataset Metadata & Column Dictionary"):
+        with st.expander("HR Dataset Metadata & Column Dictionary"):
             metadata_dict = {
                 "Attribute": ["Emp_ID", "Name", "Department", "Role", "Joining_Date", "Monthly_Salary", "Performance_Score", "Overtime", "Attrition"],
                 "Data Type": ["Integer", "String", "Categorical", "Categorical", "Datetime", "Numeric (INR)", "Numeric (0-100)", "Categorical (Yes/No)", "Categorical (Yes/No)"],
@@ -519,7 +519,7 @@ with tab_charts:
 
     st.markdown("""
     <div class="interpretation-card">
-        <strong>💡 Visual Interpretation (Bar Chart):</strong><br>
+        <strong>Visual Interpretation (Bar Chart):</strong><br>
         • <strong>R&D and Engineering</strong> command the highest average compensation packages due to specialized technical talent requirements.<br>
         • <strong>Sales and Marketing</strong> maintain variable compensation structures with moderate base salaries.<br>
         • <strong>HR and Operations</strong> demonstrate consistent, tightly clustered compensation distributions.
@@ -555,7 +555,7 @@ with tab_charts:
 
     st.markdown("""
     <div class="interpretation-card">
-        <strong>💡 Visual Interpretation (Line Chart):</strong><br>
+        <strong>Visual Interpretation (Line Chart):</strong><br>
         • The workforce trajectory indicates steady recruitment cycles with acceleration in early 2023 and mid-2025.<br>
         • Plateau periods correspond to hiring freezes and stabilization phases.<br>
         • Cumulative growth supports business scale-up across new technical product lines.
@@ -587,7 +587,7 @@ with tab_charts:
 
     st.markdown("""
     <div class="interpretation-card">
-        <strong>💡 Visual Interpretation (Scatter Plot):</strong><br>
+        <strong>Visual Interpretation (Scatter Plot):</strong><br>
         • <strong>Performance & Compensation Alignment:</strong> A clear positive trend confirms higher-performing employees generally occupy higher salary brackets.<br>
         • <strong>Underpaid High-Performers (Top-Left / Bottom-Right Quadrants):</strong> Employees scoring >85 in performance but earning below the average salary line represent potential attrition risks requiring merit raises.<br>
         • <strong>Experience Clustering:</strong> Larger bubble markers (senior staff with 10+ years experience) reliably cluster in the upper salary tiers.
@@ -668,7 +668,7 @@ with tab_insights:
 
     with c_ins1:
         with st.container(border=True):
-            st.markdown("### 🔍 Key HR Analytics Observations")
+            st.markdown("### Key HR Analytics Observations")
             st.markdown("""
             1. **Technical Compensation Premium:** **R&D and Engineering** account for over 42% of the total monthly payroll, driven by high demand for specialized artificial intelligence and software architecture roles.
             2. **Overtime & Burnout Correlation:** Employees working regular overtime experience an **attrition rate nearly 2.5x higher** than their non-overtime peers.
@@ -678,7 +678,7 @@ with tab_insights:
 
     with c_ins2:
         with st.container(border=True):
-            st.markdown("### 🎯 Strategic Talent Recommendations")
+            st.markdown("### Strategic Talent Recommendations")
             st.markdown("""
             1. **Overtime Workload Caps:** Institute mandatory caps on weekly overtime and cross-train teams to eliminate single-point operational bottlenecks.
             2. **Merit-Based Salary Corrections:** Conduct quarterly salary parity audits to proactively adjust compensation for underpaid high-performers identified in the scatter plot.
