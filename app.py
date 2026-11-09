@@ -31,19 +31,19 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom High-End SaaS / Enterprise Design System (Eliminating AI-Template Look)
+# Custom High-End SaaS / Enterprise Design System with Complete Contrast Fixes
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
-    /* Global Typography & Background */
-    html, body, [data-testid="stAppViewContainer"] {
+    /* 1. Global Typography & Background */
+    html, body, [data-testid="stAppViewContainer"], .main {
         font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-        background-color: #f8fafc;
-        color: #0f172a;
+        background-color: #f8fafc !important;
+        color: #0f172a !important;
     }
 
-    /* Top Institutional Utility Header */
+    /* 2. Top Institutional Utility Header */
     .utility-header {
         display: flex;
         justify-content: space-between;
@@ -85,7 +85,7 @@ st.markdown("""
         background-color: #10b981;
     }
 
-    /* Hero Headline Banner */
+    /* 3. Hero Headline Banner */
     .hero-banner {
         background: linear-gradient(135deg, #090d16 0%, #1e1b4b 100%);
         border-radius: 14px;
@@ -99,14 +99,14 @@ st.markdown("""
         font-size: 25px;
         font-weight: 800;
         letter-spacing: -0.02em;
-        color: #ffffff;
+        color: #ffffff !important;
         margin: 0 0 6px 0;
         line-height: 1.25;
     }
     .hero-subtitle {
         font-size: 13.5px;
         font-weight: 400;
-        color: #cbd5e1;
+        color: #cbd5e1 !important;
         line-height: 1.55;
         margin: 0;
     }
@@ -122,13 +122,83 @@ st.markdown("""
         letter-spacing: 0.06em;
         text-transform: uppercase;
         background: rgba(255, 255, 255, 0.08);
-        color: #e2e8f0;
+        color: #e2e8f0 !important;
         padding: 3px 10px;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.14);
     }
 
-    /* Bespoke Modern KPI Cards */
+    /* 4. High-Contrast Sidebar Styling */
+    [data-testid="stSidebar"] {
+        background-color: #ffffff !important;
+        border-right: 1px solid #e2e8f0 !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #0f172a !important;
+    }
+    [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+        color: #0f172a !important;
+        font-weight: 700 !important;
+    }
+    [data-testid="stSidebar"] p, [data-testid="stSidebar"] span, [data-testid="stSidebar"] label {
+        color: #1e293b !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stSidebar"] .stCaption, [data-testid="stSidebar"] small, [data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
+        color: #64748b !important;
+        font-weight: 400 !important;
+    }
+    .sidebar-category-header {
+        font-size: 11px !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.1em !important;
+        text-transform: uppercase !important;
+        color: #4338ca !important;
+        margin: 18px 0 6px 0 !important;
+    }
+
+    /* Inputs, Selectboxes, Datepickers in Sidebar */
+    [data-testid="stSidebar"] [data-baseweb="input"],
+    [data-testid="stSidebar"] [data-baseweb="select"] > div {
+        background-color: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+    }
+    [data-testid="stSidebar"] [data-baseweb="input"] input {
+        color: #0f172a !important;
+        background-color: transparent !important;
+        font-weight: 500 !important;
+    }
+
+    /* Multiselect Tag Chips: Clean Indigo with Dark Text */
+    [data-baseweb="tag"] {
+        background-color: #e0e7ff !important;
+        border: 1px solid #c7d2fe !important;
+        border-radius: 6px !important;
+    }
+    [data-baseweb="tag"] * {
+        color: #3730a3 !important;
+        font-weight: 600 !important;
+    }
+
+    /* Reset All Filters Button */
+    [data-testid="stSidebar"] button {
+        background-color: #f1f5f9 !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        transition: all 0.2s ease !important;
+    }
+    [data-testid="stSidebar"] button:hover {
+        background-color: #e2e8f0 !important;
+        border-color: #94a3b8 !important;
+    }
+    [data-testid="stSidebar"] button p {
+        color: #1e293b !important;
+        font-weight: 600 !important;
+    }
+
+    /* 5. Bespoke Modern KPI Cards */
     .kpi-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
@@ -204,7 +274,7 @@ st.markdown("""
         font-size: 11px;
     }
 
-    /* Executive Briefing Cards */
+    /* 6. Executive Briefing Cards */
     .briefing-card {
         background: #ffffff;
         border: 1px solid #e2e8f0;
@@ -228,62 +298,80 @@ st.markdown("""
         color: #334155;
     }
 
-    /* Section Subheadings */
+    /* 7. Section Subheadings */
     .section-header {
-        font-size: 12px;
-        font-weight: 800;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #475569;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin: 22px 0 14px 0;
+        font-size: 12.5px !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.08em !important;
+        text-transform: uppercase !important;
+        color: #1e293b !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin: 24px 0 14px 0 !important;
     }
     .section-header::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: #e2e8f0;
+        content: "" !important;
+        flex: 1 !important;
+        height: 1px !important;
+        background: #cbd5e1 !important;
     }
 
-    /* Segmented Tab Controls */
+    /* 8. Tabs: High Contrast & Legible (NO WASHED OUT TEXT) */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 6px;
-        background-color: #f1f5f9;
-        padding: 5px;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
+        background-color: #e2e8f0 !important;
+        padding: 6px !important;
+        border-radius: 10px !important;
+        border: 1px solid #cbd5e1 !important;
+        gap: 6px !important;
     }
+    /* Inactive Tab: Clear Dark Slate Text */
     .stTabs [data-baseweb="tab"] {
-        height: 38px;
-        padding: 0 16px;
-        background-color: transparent;
-        border-radius: 6px;
-        font-size: 13px;
-        font-weight: 600;
-        color: #64748b;
-        border: none;
+        background-color: transparent !important;
+        border-radius: 8px !important;
+        padding: 8px 18px !important;
+        border: none !important;
     }
+    .stTabs [data-baseweb="tab"] p, 
+    .stTabs [data-baseweb="tab"] span {
+        color: #334155 !important;
+        font-weight: 600 !important;
+        font-size: 13.5px !important;
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        background-color: rgba(255, 255, 255, 0.6) !important;
+    }
+    .stTabs [data-baseweb="tab"]:hover p {
+        color: #0f172a !important;
+    }
+    /* Active Tab: Crisp White Card with Deep Indigo Text */
     .stTabs [aria-selected="true"] {
         background-color: #ffffff !important;
-        color: #0f172a !important;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
-        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08) !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+    .stTabs [aria-selected="true"] p,
+    .stTabs [aria-selected="true"] span {
+        color: #1e1b4b !important;
+        font-weight: 700 !important;
     }
 
-    /* Sidebar Operational Groups */
-    [data-testid="stSidebar"] {
-        background-color: #ffffff;
-        border-right: 1px solid #e2e8f0;
+    /* 9. Expander Styling: Clean White Card with High-Contrast Header */
+    [data-testid="stExpander"] {
+        background-color: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 10px !important;
     }
-    .sidebar-category-header {
-        font-size: 10px;
-        font-weight: 800;
-        letter-spacing: 0.09em;
-        text-transform: uppercase;
-        color: #94a3b8;
-        margin: 16px 0 6px 0;
+    [data-testid="stExpander"] summary {
+        color: #0f172a !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stExpander"] summary * {
+        color: #0f172a !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stExpander"] summary:hover {
+        color: #4338ca !important;
     }
 </style>
 """, unsafe_allow_html=True)
