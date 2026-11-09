@@ -1,0 +1,251 @@
+Emp_ID,Name,Age,Department,Role,Experience_Years,Joining_Date,Monthly_Salary,Annual_Salary,Appraisal_Rating,Attendance_Pct,Performance_Score,Overtime,Attrition
+113,Swati Kumar,38,Sales,Account Manager,13,2021-01-16,126900.0,1522800.0,3.1,88.2,72.48,No,No
+350,Meera Nair,35,Marketing,Digital Marketer,11,2021-01-22,107200.0,1286400.0,4.2,91.4,86.96,No,No
+286,Kavita Nair,28,R&D,Algorithm Specialist,4,2021-01-22,66300.0,795600.0,4.7,89.2,92.08,No,No
+216,Aditi Sharma,32,Marketing,Content Strategist,8,2021-02-05,89900.0,1078800.0,5.0,91.0,96.4,No,No
+222,Divya Joshi,26,Sales,Account Manager,4,2021-02-11,63700.0,764400.0,3.3,93.4,76.96,No,No
+194,Rahul Reddy,35,Engineering,DevOps Engineer,9,2021-02-12,109700.0,1316400.0,4.2,91.1,86.84,Yes,Yes
+104,Neha Verma,26,Sales,Account Manager,1,2021-02-18,37900.0,454800.0,4.3,86.5,86.2,No,No
+297,Deepak Kumar,30,Sales,Business Dev Specialist,4,2021-02-24,58300.0,699600.0,3.9,82.6,79.84,No,No
+152,Ananya Reddy,32,Engineering,Senior Developer,7,2021-02-26,94000.0,1128000.0,4.1,91.8,85.92,No,No
+127,Pooja Patel,23,Sales,Business Dev Specialist,1,2021-03-02,37800.0,453600.0,4.3,91.8,88.32,No,No
+310,Aditi Verma,29,R&D,Data Scientist,5,2021-03-04,75400.0,904800.0,5.0,89.6,95.84,Yes,No
+272,Rahul Sharma,30,R&D,Data Scientist,5,2021-03-15,71500.0,858000.0,3.8,88.7,81.08,No,No
+227,Meera Patel,26,R&D,Algorithm Specialist,1,2021-04-10,38200.0,458400.0,4.3,93.4,88.96,No,No
+153,Tanvi Mehta,28,R&D,Research Scientist,4,2021-04-17,66900.0,802800.0,3.1,89.4,72.96,No,No
+128,Rahul Singh,38,R&D,Algorithm Specialist,13,2021-05-11,143800.0,1725600.0,2.9,82.0,67.6,No,No
+313,Vikram Verma,32,R&D,Research Scientist,6,2021-05-20,82200.0,986400.0,4.3,98.6,91.04,Yes,Yes
+169,Pooja Sen,27,Engineering,Software Engineer,1,2021-05-24,39500.0,474000.0,3.1,89.8,73.12,Yes,No
+248,Varun Nair,33,Marketing,Content Strategist,9,2021-05-24,96200.0,1154400.0,3.3,97.0,78.4,Yes,No
+165,Divya Joshi,34,Finance,Risk Controller,8,2021-05-26,90600.0,1087200.0,3.5,94.0,79.6,No,No
+238,Pooja Sharma,32,Sales,Sales Executive,10,2021-06-09,109000.0,1308000.0,4.3,88.5,87.0,Yes,No
+200,Karan Iyer,28,HR,Talent Acquisition Lead,4,2021-07-03,56900.0,682800.0,3.7,83.2,77.68,Yes,No
+141,Devansh Patel,36,Finance,Accounts Executive,10,2021-07-06,105100.0,1261200.0,4.8,81.8,90.32,No,No
+179,Aditi Patel,24,Sales,Sales Executive,2,2021-07-15,50600.0,607200.0,4.1,98.2,88.48,No,No
+332,Arjun Kumar,28,Sales,Business Dev Specialist,5,2021-07-31,68100.0,817200.0,4.5,88.7,89.48,No,No
+107,Varun Kumar,23,Sales,Sales Executive,1,2021-08-03,37400.0,448800.0,4.2,97.2,89.28,No,Yes
+325,Sanjay Deshmukh,24,Finance,Financial Analyst,2,2021-08-03,46700.0,560400.0,3.6,88.9,78.76,Yes,No
+266,Deepak Joshi,29,R&D,Algorithm Specialist,5,2021-08-15,76000.0,912000.0,4.0,83.4,81.36,No,No
+161,Swati Patel,31,Marketing,Digital Marketer,7,2021-08-27,75400.0,904800.0,4.2,88.7,85.88,Yes,No
+290,Varun Verma,37,R&D,Data Scientist,13,2021-08-29,142500.0,1710000.0,4.6,100.0,95.2,No,No
+158,Vikram Kumar,28,Finance,Payroll Specialist,3,2021-09-04,54900.0,658800.0,3.3,86.0,74.0,No,No
+333,Tanvi Sharma,24,Engineering,Software Engineer,1,2021-09-06,42000.0,504000.0,3.9,94.3,84.52,Yes,No
+249,Rahul Verma,28,Engineering,Senior Developer,6,2021-09-09,79200.0,950400.0,5.0,96.6,98.64,Yes,No
+124,Pooja Bhat,28,Finance,Accounts Executive,5,2021-09-17,68500.0,822000.0,3.8,86.3,80.12,No,No
+193,Aditi Reddy,27,Marketing,Brand Manager,5,2021-11-21,71100.0,853200.0,4.1,92.7,86.28,No,No
+269,Aditi Nair,28,Sales,Account Manager,6,2021-11-24,79000.0,948000.0,4.1,86.0,83.6,No,No
+175,Vikram Iyer,29,Sales,Regional Sales Lead,3,2021-12-07,58000.0,696000.0,4.6,90.7,91.48,Yes,No
+155,Neha Verma,28,R&D,Data Scientist,6,2021-12-17,82900.0,994800.0,3.2,92.6,75.44,Yes,No
+228,Siddharth Verma,34,Marketing,SEO Specialist,11,2021-12-25,105200.0,1262400.0,3.9,92.8,83.92,No,No
+337,Ananya Chopra,28,Marketing,Digital Marketer,3,2022-01-05,50200.0,602400.0,4.6,86.1,89.64,No,No
+170,Manish Nair,28,HR,Talent Acquisition Lead,2,2022-01-12,45900.0,550800.0,3.0,88.6,71.44,No,No
+262,Aditi Deshmukh,26,R&D,Research Scientist,3,2022-01-19,55700.0,668400.0,3.7,91.4,80.96,No,No
+257,Priya Iyer,26,R&D,Data Scientist,4,2022-02-11,68500.0,822000.0,4.0,94.5,85.8,Yes,No
+260,Aditi Kumar,25,Marketing,Digital Marketer,1,2022-02-17,37100.0,445200.0,3.2,98.5,77.8,Yes,No
+307,Varun Reddy,29,Engineering,Senior Developer,7,2022-03-10,87900.0,1054800.0,3.9,100.0,86.8,Yes,No
+253,Sanjay Kumar,26,Finance,Payroll Specialist,1,2022-03-10,43300.0,519600.0,4.7,88.3,91.72,Yes,No
+236,Priya Gupta,25,Engineering,Senior Developer,1,2022-04-04,43600.0,523200.0,3.4,94.6,78.64,Yes,No
+184,Meera Singh,23,R&D,Data Scientist,1,2022-04-14,41900.0,502800.0,4.4,87.4,87.76,Yes,No
+120,Karan Iyer,29,Marketing,Digital Marketer,4,2022-04-19,56500.0,678000.0,4.7,88.3,91.72,No,No
+341,Siddharth Rao,28,Sales,Sales Executive,2,2022-05-13,49400.0,592800.0,3.2,95.1,76.44,No,No
+347,Sanjay Rao,34,R&D,Data Scientist,11,2022-05-22,122200.0,1466400.0,3.9,100.0,86.8,No,No
+142,Varun Verma,33,Sales,Account Manager,7,2022-06-03,85900.0,1030800.0,4.2,95.7,88.68,No,No
+147,Rohan Singh,30,Sales,Account Manager,8,2022-06-09,92600.0,1111200.0,3.3,97.8,78.72,No,Yes
+132,Pooja Patel,25,Marketing,Content Strategist,2,2022-06-14,43000.0,516000.0,3.8,100.0,85.6,No,No
+154,Ritu Chopra,31,R&D,AI Researcher,8,2022-06-22,97400.0,1168800.0,3.2,89.2,74.08,Yes,Yes
+271,Ananya Bhat,32,Sales,Regional Sales Lead,8,2022-06-24,90100.0,1081200.0,3.2,89.9,74.36,No,No
+300,Ananya Nair,38,Finance,Risk Controller,12,2022-06-25,120000.0,1440000.0,3.4,93.2,78.08,No,No
+173,Deepak Kumar,30,Sales,Account Manager,4,2022-07-05,64100.0,769200.0,3.3,95.1,77.64,No,No
+221,Rahul Chopra,31,Sales,Sales Executive,7,2022-07-21,80800.0,969600.0,4.8,100.0,97.6,No,No
+207,Meera Patel,26,Marketing,Content Strategist,3,2022-08-07,57500.0,690000.0,3.3,83.5,73.0,Yes,No
+283,Rohan Verma,29,Marketing,Digital Marketer,6,2022-08-08,72500.0,870000.0,4.6,87.8,90.32,No,No
+204,Pooja Iyer,28,HR,Talent Acquisition Lead,2,2022-08-26,44200.0,530400.0,3.5,87.8,77.12,No,No
+213,Sneha Deshmukh,31,Marketing,Digital Marketer,9,2022-08-29,93100.0,1117200.0,3.4,90.7,77.08,No,No
+281,Rohan Sharma,38,Sales,Business Dev Specialist,13,2022-08-30,122800.0,1473600.0,3.6,89.9,79.16,Yes,No
+247,Rahul Iyer,29,R&D,Data Scientist,5,2022-08-31,75400.0,904800.0,4.8,82.0,90.4,No,No
+103,Tanvi Bhat,30,Sales,Business Dev Specialist,5,2022-09-07,74100.0,889200.0,4.1,92.6,86.24,Yes,Yes
+171,Meera Reddy,23,HR,Talent Acquisition Lead,1,2022-09-10,38700.0,464400.0,4.3,94.4,89.36,No,No
+322,Devansh Rao,27,Finance,Accounts Executive,5,2022-09-10,73500.0,882000.0,4.8,87.8,92.72,No,No
+212,Sanjay Sen,29,HR,HR Operations Analyst,3,2022-09-13,52900.0,634800.0,3.7,86.1,78.84,No,No
+244,Siddharth Kumar,23,R&D,Data Scientist,1,2022-10-06,40400.0,484800.0,2.2,89.5,62.2,Yes,No
+116,Kavita Joshi,31,Marketing,SEO Specialist,7,2022-10-17,79800.0,957600.0,3.3,90.7,75.88,No,No
+265,Abhishek Sharma,30,Engineering,Senior Developer,8,2022-10-23,98000.0,1176000.0,2.6,85.8,65.52,No,No
+217,Rahul Bhat,27,HR,Talent Acquisition Lead,4,2022-11-07,55300.0,663600.0,3.4,95.1,78.84,No,No
+174,Arjun Patel,28,Sales,Account Manager,4,2022-11-09,59000.0,708000.0,2.7,90.7,68.68,No,No
+289,Arjun Sen,36,Sales,Account Manager,12,2022-11-15,118200.0,1418400.0,4.0,94.6,85.84,No,No
+264,Ritu Singh,29,R&D,Algorithm Specialist,4,2022-12-01,68700.0,824400.0,3.0,90.2,72.08,Yes,No
+288,Rahul Chopra,24,Engineering,Senior Developer,2,2022-12-03,48600.0,583200.0,3.5,92.4,78.96,No,No
+276,Manish Sen,28,R&D,AI Researcher,4,2022-12-19,70200.0,842400.0,3.3,80.9,71.96,No,No
+157,Manish Singh,29,Marketing,SEO Specialist,4,2022-12-29,58900.0,706800.0,3.1,84.0,70.8,Yes,No
+215,Vikram Verma,29,Engineering,Senior Developer,6,2022-12-31,81800.0,981600.0,3.9,100.0,86.8,No,No
+258,Karan Gupta,25,Finance,Risk Controller,2,2023-02-12,46700.0,560400.0,3.7,92.8,81.52,No,No
+106,Siddharth Sharma,27,HR,HR Operations Analyst,1,2023-02-17,41500.0,498000.0,2.8,88.4,68.96,No,No
+150,Divya Joshi,30,HR,Talent Acquisition Lead,8,2023-02-17,83000.0,996000.0,4.3,98.8,91.12,No,No
+190,Rohan Patel,24,Marketing,Brand Manager,2,2023-03-03,45900.0,550800.0,4.7,97.1,95.24,Yes,No
+234,Arjun Chopra,27,Finance,Accounts Executive,1,2023-03-14,35400.0,424800.0,3.6,94.0,80.8,No,Yes
+209,Neha Iyer,34,Marketing,SEO Specialist,9,2023-03-18,88600.0,1063200.0,3.4,97.8,79.92,No,No
+316,Sanjay Rao,24,R&D,Data Scientist,1,2023-03-22,39600.0,475200.0,3.5,80.6,74.24,No,No
+151,Priya Patel,27,HR,Talent Acquisition Lead,3,2023-03-22,52000.0,624000.0,3.5,81.9,74.76,No,No
+177,Devansh Rao,30,Marketing,Content Strategist,5,2023-03-25,64600.0,775200.0,1.5,90.2,54.08,Yes,Yes
+105,Neha Gupta,30,R&D,Algorithm Specialist,7,2023-04-10,90300.0,1083600.0,3.8,91.1,82.04,No,No
+259,Priya Sharma,24,Engineering,QA Architect,2,2023-05-09,48400.0,580800.0,3.3,94.3,77.32,No,No
+287,Swati Joshi,24,Finance,Risk Controller,2,2023-05-12,48900.0,586800.0,3.7,85.9,78.76,No,No
+330,Sanjay Sharma,31,Sales,Account Manager,5,2023-05-14,70800.0,849600.0,4.0,94.1,85.64,No,No
+137,Abhishek Gupta,29,HR,HR Operations Analyst,3,2023-05-15,50800.0,609600.0,4.4,90.6,89.04,No,No
+282,Swati Chopra,29,R&D,Algorithm Specialist,7,2023-05-17,90100.0,1081200.0,4.0,99.1,87.64,No,No
+159,Varun Verma,29,R&D,AI Researcher,7,2023-06-10,86500.0,1038000.0,4.5,95.6,92.24,No,No
+146,Varun Rao,37,R&D,Data Scientist,11,2023-06-10,125400.0,1504800.0,2.9,100.0,74.8,No,No
+331,Swati Verma,29,Marketing,Digital Marketer,7,2023-06-22,79600.0,955200.0,3.8,90.4,81.76,No,Yes
+233,Sanjay Reddy,30,Engineering,Senior Developer,4,2023-06-24,64900.0,778800.0,3.0,91.3,72.52,No,No
+162,Kavita Gupta,31,HR,HR Specialist,5,2023-07-05,65700.0,788400.0,4.3,92.1,88.44,Yes,No
+218,Rohan Deshmukh,29,HR,HR Generalist,6,2023-07-06,73600.0,883200.0,2.8,89.6,69.44,No,No
+315,Varun Verma,37,Sales,Regional Sales Lead,13,2023-07-14,124600.0,1495200.0,4.1,86.5,83.8,Yes,No
+214,Divya Patel,28,R&D,Research Scientist,5,2023-07-21,73500.0,882000.0,3.9,81.8,79.52,Yes,No
+226,Rohan Gupta,31,HR,Talent Acquisition Lead,6,2023-07-22,69600.0,835200.0,4.4,93.7,90.28,No,No
+145,Ananya Reddy,30,Sales,Regional Sales Lead,5,2023-07-28,64400.0,772800.0,3.3,89.5,75.4,Yes,No
+263,Pooja Sen,39,R&D,AI Researcher,13,2023-08-08,146300.0,1755600.0,4.2,94.7,88.28,Yes,No
+119,Swati Iyer,33,R&D,Algorithm Specialist,8,2023-08-29,95400.0,1144800.0,4.6,87.1,90.04,No,No
+125,Tanvi Singh,27,Sales,Business Dev Specialist,4,2023-09-13,61800.0,741600.0,5.0,94.9,97.96,No,No
+111,Sanjay Patel,26,Sales,Regional Sales Lead,2,2023-09-14,44300.0,531600.0,3.5,95.6,80.24,Yes,No
+277,Rohan Iyer,24,R&D,Algorithm Specialist,1,2023-09-26,40700.0,488400.0,3.9,89.7,82.68,No,No
+239,Manish Iyer,27,R&D,AI Researcher,5,2023-09-29,76100.0,913200.0,4.1,91.1,85.64,Yes,No
+303,Meera Patel,25,R&D,Algorithm Specialist,2,2023-10-09,45500.0,546000.0,3.7,84.5,78.2,Yes,No
+240,Vikram Deshmukh,29,Marketing,Digital Marketer,3,2023-10-10,52100.0,625200.0,4.3,84.3,85.32,No,No
+230,Tanvi Chopra,26,Finance,Financial Analyst,2,2023-10-12,45900.0,550800.0,3.6,96.8,81.92,Yes,No
+329,Sanjay Chopra,26,HR,HR Specialist,4,2023-10-23,50300.0,603600.0,3.9,100.0,86.8,Yes,No
+211,Ritu Iyer,27,R&D,Research Scientist,1,2023-10-25,40100.0,481200.0,2.9,84.9,68.76,No,No
+232,Abhishek Deshmukh,25,Sales,Regional Sales Lead,1,2023-11-07,44200.0,530400.0,4.9,97.0,97.6,No,No
+187,Ananya Bhat,31,R&D,AI Researcher,9,2023-11-21,114900.0,1378800.0,3.7,97.7,83.48,Yes,Yes
+206,Priya Bhat,37,Sales,Business Dev Specialist,11,2023-11-21,111000.0,1332000.0,3.4,94.5,78.6,No,No
+267,Siddharth Iyer,29,Finance,Accounts Executive,4,2023-12-04,62700.0,752400.0,5.0,93.2,97.28,Yes,No
+122,Rohan Joshi,27,Marketing,SEO Specialist,5,2023-12-11,63900.0,766800.0,2.6,90.8,67.52,No,No
+138,Siddharth Deshmukh,30,Sales,Business Dev Specialist,5,2023-12-16,66200.0,794400.0,4.6,96.0,93.6,No,No
+342,Varun Singh,25,Engineering,DevOps Engineer,1,2024-01-02,37100.0,445200.0,4.1,97.8,88.32,Yes,No
+225,Siddharth Patel,24,R&D,Research Scientist,1,2024-01-02,39700.0,476400.0,3.5,92.7,79.08,Yes,No
+298,Ananya Mehta,35,Engineering,QA Architect,9,2024-01-05,104700.0,1256400.0,4.4,93.1,90.04,Yes,Yes
+326,Devansh Iyer,23,Marketing,SEO Specialist,1,2024-01-18,39300.0,471600.0,3.1,96.9,75.96,No,Yes
+229,Neha Iyer,37,Marketing,SEO Specialist,11,2024-02-01,108900.0,1306800.0,5.0,87.0,94.8,No,No
+252,Manish Verma,27,Sales,Account Manager,4,2024-02-11,62100.0,745200.0,3.9,90.3,82.92,No,No
+135,Priya Nair,29,Sales,Regional Sales Lead,6,2024-02-11,77100.0,925200.0,4.0,96.1,86.44,Yes,No
+270,Divya Joshi,33,Marketing,Content Strategist,7,2024-02-13,80700.0,968400.0,2.8,86.5,68.2,Yes,No
+148,Devansh Sen,32,R&D,Data Scientist,6,2024-03-28,82100.0,985200.0,4.9,93.6,96.24,No,No
+273,Manish Gupta,27,Marketing,SEO Specialist,1,2024-03-29,40200.0,482400.0,3.5,80.5,74.2,Yes,No
+279,Pooja Kumar,27,Finance,Risk Controller,2,2024-03-31,40900.0,490800.0,4.4,95.7,91.08,Yes,No
+192,Ritu Bhat,28,Engineering,DevOps Engineer,4,2024-04-23,66200.0,794400.0,2.8,94.5,71.4,Yes,Yes
+172,Karan Patel,35,R&D,Data Scientist,11,2024-05-04,126100.0,1513200.0,3.1,91.4,73.76,No,No
+129,Deepak Bhat,24,Marketing,Digital Marketer,1,2024-05-11,37600.0,451200.0,3.3,100.0,79.6,No,No
+291,Karan Iyer,32,Engineering,Senior Developer,7,2024-06-09,85800.0,1029600.0,4.6,95.7,93.48,No,No
+130,Vikram Deshmukh,31,HR,Talent Acquisition Lead,7,2024-06-11,78200.0,938400.0,3.3,85.6,73.84,No,Yes
+261,Manish Singh,28,Finance,Accounts Executive,2,2024-06-14,50100.0,601200.0,3.9,91.4,83.36,Yes,No
+166,Varun Reddy,28,Sales,Regional Sales Lead,4,2024-06-16,59500.0,714000.0,4.3,100.0,91.6,No,No
+205,Meera Singh,27,R&D,Research Scientist,5,2024-06-24,72000.0,864000.0,3.9,90.9,83.16,Yes,Yes
+143,Abhishek Kumar,27,Engineering,Senior Developer,4,2024-06-24,65200.0,782400.0,3.8,92.5,82.6,No,No
+219,Meera Gupta,29,Engineering,DevOps Engineer,4,2024-07-11,68100.0,817200.0,4.3,92.1,88.44,No,No
+349,Tanvi Sharma,30,Marketing,Content Strategist,5,2024-07-21,64900.0,778800.0,2.7,88.4,67.76,No,No
+220,Sanjay Verma,30,Sales,Account Manager,5,2024-07-29,71700.0,860400.0,2.7,89.1,68.04,No,No
+133,Tanvi Sharma,25,Engineering,Senior Developer,1,2024-07-29,41700.0,500400.0,4.5,86.8,88.72,No,No
+182,Swati Gupta,36,Engineering,QA Architect,14,2024-08-11,149400.0,1792800.0,5.0,78.1,91.24,No,No
+319,Swati Chopra,33,Sales,Business Dev Specialist,8,2024-08-14,89800.0,1077600.0,4.4,100.0,92.8,Yes,No
+164,Sneha Singh,36,Finance,Accounts Executive,11,2024-08-26,111500.0,1338000.0,3.9,92.4,83.76,Yes,Yes
+117,Arjun Joshi,34,Marketing,Content Strategist,11,2024-09-03,108800.0,1305600.0,2.9,93.1,72.04,No,No
+156,Ananya Gupta,25,R&D,AI Researcher,2,2024-09-11,53900.0,646800.0,3.9,100.0,86.8,No,Yes
+323,Manish Bhat,32,Finance,Risk Controller,8,2024-09-22,91300.0,1095600.0,3.7,91.0,80.8,No,No
+144,Abhishek Rao,30,Sales,Sales Executive,6,2024-10-17,72900.0,874800.0,3.7,96.9,83.16,No,No
+241,Swati Joshi,30,Finance,Risk Controller,7,2024-10-22,84800.0,1017600.0,4.0,96.0,86.4,No,No
+304,Abhishek Rao,26,R&D,Algorithm Specialist,1,2024-11-01,42400.0,508800.0,3.6,83.0,76.4,No,No
+181,Arjun Reddy,30,Finance,Accounts Executive,5,2024-11-02,68200.0,818400.0,4.5,88.9,89.56,No,No
+140,Neha Chopra,31,R&D,Research Scientist,8,2024-11-03,98600.0,1183200.0,3.8,86.1,80.04,Yes,No
+197,Rohan Chopra,28,R&D,Algorithm Specialist,4,2024-11-04,65800.0,789600.0,3.8,97.7,84.68,Yes,No
+224,Arjun Joshi,28,Marketing,Brand Manager,3,2024-11-05,53000.0,636000.0,3.6,100.0,83.2,No,No
+183,Vikram Kumar,27,R&D,AI Researcher,4,2024-11-16,62800.0,753600.0,3.9,83.9,80.36,No,No
+339,Priya Patel,26,Marketing,Content Strategist,4,2024-11-16,57100.0,685200.0,4.6,90.7,91.48,No,No
+344,Kavita Verma,23,Marketing,Brand Manager,1,2024-12-02,38700.0,464400.0,4.3,87.7,86.68,No,No
+301,Karan Nair,28,Engineering,Software Engineer,2,2024-12-14,51400.0,616800.0,5.0,86.9,94.76,No,No
+114,Priya Joshi,25,R&D,Research Scientist,3,2024-12-24,58600.0,703200.0,3.4,89.9,76.76,No,No
+231,Deepak Nair,23,Engineering,Software Engineer,1,2024-12-25,42900.0,514800.0,2.8,97.9,72.76,No,No
+335,Rohan Reddy,37,R&D,Data Scientist,12,2025-02-01,133800.0,1605600.0,4.6,93.4,92.56,No,Yes
+108,Aditi Joshi,29,Sales,Regional Sales Lead,3,2025-02-08,55700.0,668400.0,4.4,98.8,92.32,No,No
+191,Tanvi Singh,28,Engineering,Senior Developer,5,2025-02-23,71000.0,852000.0,3.5,87.9,77.16,Yes,No
+121,Manish Patel,31,R&D,Data Scientist,5,2025-02-27,76800.0,921600.0,3.8,82.3,78.52,No,No
+320,Rohan Gupta,26,Marketing,Content Strategist,2,2025-03-05,48400.0,580800.0,4.0,94.3,85.72,No,No
+101,Vikram Iyer,34,Engineering,DevOps Engineer,8,2025-03-10,96700.0,1160400.0,3.6,99.9,83.16,Yes,No
+305,Divya Rao,23,R&D,Algorithm Specialist,1,2025-03-12,40800.0,489600.0,4.7,93.0,93.6,Yes,No
+245,Rohan Iyer,28,Engineering,QA Architect,2,2025-03-18,47700.0,572400.0,3.5,94.1,79.64,No,No
+251,Meera Deshmukh,28,R&D,Algorithm Specialist,3,2025-04-04,55200.0,662400.0,3.7,86.0,78.8,No,No
+139,Vikram Rao,33,HR,HR Specialist,7,2025-04-06,75200.0,902400.0,3.6,94.1,80.84,No,No
+198,Pooja Mehta,24,R&D,Data Scientist,1,2025-04-08,39700.0,476400.0,3.4,97.9,79.96,Yes,No
+317,Varun Mehta,26,Engineering,QA Architect,1,2025-05-11,40100.0,481200.0,4.1,85.7,83.48,Yes,No
+285,Kavita Joshi,27,R&D,Research Scientist,4,2025-05-11,66900.0,802800.0,4.9,87.6,93.84,Yes,No
+110,Rohan Singh,32,HR,HR Generalist,7,2025-05-31,76500.0,918000.0,3.9,95.0,84.8,No,No
+293,Siddharth Mehta,30,Marketing,Brand Manager,7,2025-06-05,82600.0,991200.0,3.0,90.0,72.0,No,No
+321,Rohan Gupta,34,Marketing,Digital Marketer,9,2025-06-13,90900.0,1090800.0,3.8,91.7,82.28,Yes,No
+134,Rahul Gupta,28,Engineering,Senior Developer,2,2025-06-28,48800.0,585600.0,3.5,93.0,79.2,Yes,No
+160,Sneha Sen,26,Engineering,Software Engineer,1,2025-07-02,39400.0,472800.0,4.4,92.7,89.88,Yes,No
+112,Karan Nair,31,R&D,Algorithm Specialist,5,2025-07-04,73900.0,886800.0,3.0,96.6,74.64,Yes,Yes
+188,Devansh Kumar,28,Marketing,Brand Manager,4,2025-07-09,57400.0,688800.0,4.1,94.7,87.08,No,No
+167,Siddharth Singh,34,HR,HR Specialist,10,2025-07-19,90900.0,1090800.0,4.8,98.1,96.84,No,No
+314,Arjun Gupta,28,R&D,Algorithm Specialist,5,2025-07-21,78000.0,936000.0,4.0,97.8,87.12,No,No
+296,Neha Mehta,27,Sales,Sales Executive,4,2025-08-01,54900.0,658800.0,4.2,96.4,88.96,No,No
+292,Devansh Sen,26,Sales,Account Manager,3,2025-08-16,52000.0,624000.0,4.3,98.3,90.92,No,No
+334,Varun Sen,26,Engineering,QA Architect,1,2025-08-17,42400.0,508800.0,3.1,97.3,76.12,Yes,No
+235,Varun Patel,30,R&D,Data Scientist,4,2025-08-23,63500.0,762000.0,3.0,92.9,73.16,Yes,No
+295,Varun Bhat,33,R&D,Research Scientist,9,2025-08-24,106100.0,1273200.0,3.9,83.5,80.2,No,No
+328,Priya Singh,35,Sales,Business Dev Specialist,11,2025-09-04,106500.0,1278000.0,3.8,90.3,81.72,No,No
+118,Meera Sen,24,Engineering,DevOps Engineer,2,2025-09-07,51600.0,619200.0,4.7,87.7,91.48,No,No
+210,Swati Joshi,29,HR,HR Operations Analyst,4,2025-09-20,55500.0,666000.0,4.0,90.8,84.32,No,No
+208,Deepak Reddy,37,R&D,Data Scientist,15,2025-09-21,163000.0,1956000.0,4.7,92.5,93.4,Yes,No
+201,Karan Bhat,30,Marketing,Digital Marketer,7,2025-09-22,75200.0,902400.0,2.9,96.4,73.36,No,Yes
+126,Manish Singh,25,R&D,Data Scientist,1,2025-09-26,43300.0,519600.0,5.0,82.7,93.08,Yes,No
+203,Aditi Mehta,33,Engineering,Software Engineer,9,2025-09-27,104500.0,1254000.0,4.2,90.7,86.68,Yes,No
+340,Sneha Gupta,24,Sales,Regional Sales Lead,2,2025-10-03,47400.0,568800.0,4.1,92.1,86.04,Yes,Yes
+345,Varun Nair,30,R&D,Research Scientist,5,2025-10-04,78500.0,942000.0,3.1,87.9,72.36,No,No
+256,Varun Deshmukh,26,Sales,Business Dev Specialist,2,2025-10-12,46700.0,560400.0,4.6,91.2,91.68,Yes,No
+242,Sneha Kumar,27,HR,HR Specialist,4,2025-10-16,54600.0,655200.0,3.4,93.0,78.0,No,No
+284,Pooja Nair,30,R&D,AI Researcher,4,2025-10-30,68500.0,822000.0,3.5,87.2,76.88,No,No
+189,Meera Mehta,30,Engineering,Software Engineer,8,2025-10-31,94000.0,1128000.0,3.6,97.3,82.12,No,No
+280,Swati Bhat,26,Engineering,Software Engineer,1,2025-11-03,39500.0,474000.0,4.2,98.3,89.72,No,No
+109,Rahul Gupta,32,Marketing,SEO Specialist,8,2025-11-07,79900.0,958800.0,4.4,92.4,89.76,Yes,No
+274,Kavita Gupta,29,HR,HR Generalist,7,2025-11-25,78100.0,937200.0,3.9,94.9,84.76,No,No
+186,Ananya Gupta,28,Marketing,Brand Manager,5,2025-12-05,65400.0,784800.0,4.2,91.4,86.96,Yes,No
+294,Ananya Reddy,29,HR,Talent Acquisition Lead,3,2025-12-07,52700.0,632400.0,4.2,92.9,87.56,No,No
+178,Pooja Reddy,28,Engineering,Senior Developer,3,2025-12-10,57100.0,685200.0,4.7,81.1,88.84,Yes,No
+115,Deepak Iyer,28,R&D,Algorithm Specialist,2,2025-12-14,52500.0,630000.0,4.8,87.6,92.64,No,No
+223,Priya Nair,30,Marketing,SEO Specialist,5,2025-12-19,62100.0,745200.0,3.6,81.5,75.8,No,No
+237,Pooja Sharma,23,Engineering,QA Architect,1,2025-12-26,41400.0,496800.0,2.2,93.2,63.68,No,No
+338,Sanjay Joshi,24,R&D,Research Scientist,1,2026-01-04,44600.0,535200.0,3.2,92.5,75.4,No,No
+123,Swati Chopra,30,Sales,Sales Executive,5,2026-01-05,66600.0,799200.0,4.3,97.2,90.48,Yes,No
+136,Tanvi Iyer,31,Sales,Business Dev Specialist,5,2026-01-10,69300.0,831600.0,4.3,86.4,86.16,No,No
+324,Rohan Chopra,34,Engineering,Software Engineer,11,2026-01-22,124600.0,1495200.0,5.0,90.8,96.32,No,No
+308,Ritu Sen,27,R&D,Algorithm Specialist,5,2026-01-31,76700.0,920400.0,4.2,91.2,86.88,No,No
+343,Ananya Sharma,34,R&D,Research Scientist,11,2026-02-05,129700.0,1556400.0,3.7,88.5,79.8,No,No
+168,Devansh Iyer,30,Marketing,SEO Specialist,8,2026-02-15,84200.0,1010400.0,3.0,87.9,71.16,No,Yes
+246,Priya Chopra,28,R&D,Research Scientist,2,2026-02-24,49800.0,597600.0,3.3,90.8,75.92,No,No
+243,Ritu Nair,27,HR,HR Specialist,4,2026-02-26,62000.0,744000.0,4.1,88.5,84.6,No,No
+311,Deepak Sharma,27,Marketing,Brand Manager,3,2026-03-19,57000.0,684000.0,3.3,87.3,74.52,No,No
+202,Varun Joshi,27,R&D,Research Scientist,1,2026-03-19,38100.0,457200.0,5.0,89.3,95.72,No,No
+348,Arjun Joshi,38,Finance,Risk Controller,15,2026-03-20,140300.0,1683600.0,3.5,94.9,79.96,No,No
+275,Siddharth Mehta,33,Marketing,SEO Specialist,9,2026-03-30,94000.0,1128000.0,2.8,95.6,71.84,No,No
+268,Vikram Joshi,27,Marketing,Brand Manager,4,2026-04-22,65700.0,788400.0,4.7,93.2,93.68,No,No
+299,Abhishek Deshmukh,25,R&D,AI Researcher,2,2026-04-27,53700.0,644400.0,4.4,88.0,88.0,No,No
+309,Arjun Chopra,23,R&D,Data Scientist,1,2026-05-04,42900.0,514800.0,4.0,88.9,83.56,No,Yes
+302,Meera Chopra,35,Engineering,QA Architect,12,2026-05-05,131900.0,1582800.0,4.0,91.9,84.76,Yes,No
+180,Sanjay Rao,24,Sales,Regional Sales Lead,1,2026-05-08,40200.0,482400.0,2.6,100.0,71.2,No,No
+163,Ritu Sharma,28,R&D,AI Researcher,5,2026-05-12,77000.0,924000.0,3.4,96.2,79.28,No,No
+312,Rahul Nair,31,Finance,Accounts Executive,7,2026-05-12,81600.0,979200.0,2.5,97.9,69.16,No,No
+327,Rahul Sharma,28,R&D,Algorithm Specialist,5,2026-05-19,75500.0,906000.0,4.4,91.3,89.32,Yes,No
+306,Manish Mehta,27,R&D,Data Scientist,2,2026-05-21,51500.0,618000.0,4.2,93.7,87.88,No,No
+250,Kavita Nair,27,Engineering,Senior Developer,1,2026-06-17,36200.0,434400.0,3.8,86.7,80.28,No,No
+318,Priya Deshmukh,26,Marketing,Content Strategist,1,2026-06-20,39100.0,469200.0,4.2,89.5,86.2,No,No
+149,Sanjay Rao,38,R&D,Research Scientist,12,2026-06-22,134800.0,1617600.0,3.6,75.0,73.2,No,No
+278,Ananya Sen,26,R&D,Algorithm Specialist,1,2026-07-22,39600.0,475200.0,3.1,87.2,72.08,No,No
+336,Karan Chopra,27,Sales,Sales Executive,4,2026-07-24,58500.0,702000.0,4.2,86.3,84.92,No,No
+255,Divya Sen,27,R&D,Data Scientist,1,2026-07-28,39100.0,469200.0,4.1,84.6,83.04,Yes,No
+199,Rahul Iyer,26,Engineering,Software Engineer,2,2026-08-07,50300.0,603600.0,4.5,93.7,91.48,Yes,No
+195,Abhishek Chopra,31,R&D,Algorithm Specialist,6,2026-08-10,78800.0,945600.0,2.6,87.6,66.24,Yes,No
+196,Ananya Verma,28,R&D,Research Scientist,2,2026-08-18,51000.0,612000.0,3.8,93.2,82.88,No,No
+254,Sneha Singh,36,Marketing,Digital Marketer,10,2026-08-21,98100.0,1177200.0,4.1,81.1,81.64,No,No
+102,Sneha Verma,28,R&D,Research Scientist,5,2026-08-24,76400.0,916800.0,2.0,96.8,62.72,Yes,No
+185,Pooja Chopra,26,Finance,Financial Analyst,3,2026-09-04,49800.0,597600.0,3.1,92.7,74.28,Yes,No
+346,Siddharth Bhat,29,Marketing,Content Strategist,6,2026-09-08,69700.0,836400.0,3.0,91.2,72.48,No,No
+176,Devansh Deshmukh,28,R&D,AI Researcher,4,2026-09-11,63200.0,758400.0,3.5,81.4,74.56,No,No
+131,Rohan Bhat,39,R&D,Data Scientist,13,2026-09-16,140200.0,1682400.0,3.8,75.8,75.92,Yes,No

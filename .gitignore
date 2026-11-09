@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary or unrelated previous lab files
+ecommerce_data.csv
+2647218_P (1).docx
+2647218_P.py
+
+# OS generated files
+.DS_Store
+Thumbs.db
